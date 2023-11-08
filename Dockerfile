@@ -16,7 +16,8 @@
 
 ARG SPARK_IMAGE=gcr.io/spark-operator/spark:v3.1.1
 
-FROM golang:1.19.2-alpine as builder
+#FROM golang:1.19.2-alpine as builder
+FROM golang:1.20.11-alpine3.18 as builder
 
 WORKDIR /workspace
 
